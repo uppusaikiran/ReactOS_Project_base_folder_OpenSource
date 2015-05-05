@@ -1,7 +1,5 @@
-# ReactOS_Project_base_folder_OpenSource
               Building a custom File hierarchy by modifying the git kernel
-              Youtube link https://www.youtube.com/watch?v=v04KbT0dh2E
-
+https://www.youtube.com/watch?v=v04KbT0dh2E
 AIM:
 To develop an Operating system by taking the source code of Windows-clone ReactOS and build a new looking and with drivers that to support Windows Os.
 TOOLS:
@@ -33,7 +31,12 @@ This is just like git where all the repository is maintained and the connection 
 after installing these files are installing.Now read the instructions given in Readme.
 Now just DoubleClick the RosBE PS – PostInstall .After this this command prompt will setup now type the “ssnv create” .This will install the source code of the react os.
  
-After installing the tree structure of the source code can we viewed in above screenshot. Now jump to the folder.
+After installing the tree structure of the source code can we viewed in above screenshot. Now jump to the folder. 
+
+
+
+
+
 After loading ReactOS in Virtual Box it somewhat looked like our most lovable evergreen WINDOWS XP with slightly different look perhaps. Let’s see how our traditional Command Prompt looks ….
 
 Changing the source:
@@ -124,6 +127,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCmdL
       0,
 
 Now... Start ROS (debug version) in QEMU and the debug-output will appear in the debug window
+
 New Update for present Cmake File System
 rbuild files are now obsolete you should use cmake files: 
 
@@ -160,17 +164,9 @@ add_executable(firstapp firstapp.c firstapp.rc)
 set_module_type(firstapp gdi32 user32 shell32 msvcrt kernel32 ntdll)
 add_importlibs(firstapp kernel32 gdi32 user32 )
 add_cd_file(TARGET firstapp DESTINATION reactos NO_CAB FOR bootcd)
-
-
-
-
-
-
-
 Suggestion by group Members:
 	1. Improvisation of the graphical approach rather than command interface	
 	2. Not only just editing trying to develop a small os with just command line not much GUI
-	
 
 References:
 https://www.reactos.org/forum/ucp.php?mode=login
